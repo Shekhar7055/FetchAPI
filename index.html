@@ -21,7 +21,8 @@
                 <th>Rating</th>
                 <th>Stock</th>
                 <th>Brand</th>
-                <th>Category</th>  
+                <th>Category</th> 
+                <th>Thumbnail</th> 
             </tr>
         </thead>
         <tbody id="tableRow"></tbody>
@@ -46,6 +47,7 @@
                 <td>${product.stock}</td>
                 <td>${product.brand}</td>
                 <td>${product.category}</td>
+                <td><img src="${product.thumbnail}" style="width:80%"</td>
                 </tr>`
         })
         document.getElementById("tableRow").innerHTML=rows;
